@@ -1,0 +1,76 @@
+.head {
+  min-height: 80vh;
+  background-image: url("../img/tianjin-2185510_1920.jpg");
+  image-rendering: auto;
+
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+
+  &__line {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    padding-top: 20px;
+    margin-top: 130px;
+
+    p {
+      color: rgb(235, 220, 220);
+      font-family: "Abril Fatface";
+    }
+  }
+  &__h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+    text-shadow: 10px 10px 10px 10px white;
+    font-family: "Indie Flower";
+  }
+  &__but {
+    border: 2px solid lightblue;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-right: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    background: rgba(107, 107, 107, 0.7);
+    transition: linear 0.3s;
+    font-family: "Poppins";
+  }
+  &__but:hover {
+    border: 2px solid lightblue;
+    background-color: lightblue;
+    color: rgb(63, 58, 58);
+  }
+  div {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .head {
+    height: 100vh;
+    justify-content: space-evenly;
+
+    &__line {
+      font-size: 42px;
+
+      justify-content: space-evenly;
+      p {
+        font-size: 46px;
+      }
+    }
+    &__h2 {
+      font-size: 50px;
+    }
+    &__but {
+      font-size: 25px;
+      margin: 0 30px;
+    }
+  }
+}

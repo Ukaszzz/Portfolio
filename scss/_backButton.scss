@@ -1,0 +1,27 @@
+.backButton {
+  bottom: 0;
+  max-width: 1370px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background-color: transparent;
+}
+
+.back {
+  font-family: "roboto";
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  font-size: 30px;
+
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
+  border-color: rgb(255, 153, 0);
+}
+
+.fas {
+  color: rgb(255, 153, 0);
+}
