@@ -687,8 +687,8 @@ body {
   font-size: 30px;
   color: white;
   background-color: transparent;
-  border-radius: 50%;
-  border-color: #ff9900;
+  border-radius: 30%;
+  border-color: black;
 }
 
 .fas {
