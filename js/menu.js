@@ -1,8 +1,8 @@
 let clicked = true;
 let size = 100;
-btn1 = document.querySelector(".smallMenu");
+btnSmallMenu = document.querySelector(".smallMenu");
 nav = document.querySelector(".menu__navigation");
-hh = document.querySelector(".head__line");
+headLine = document.querySelector(".head__line");
 const btnBack = document.querySelector(".backButton");
 
 window.addEventListener("scroll", function() {
@@ -16,23 +16,23 @@ window.addEventListener("scroll", function() {
   }
 });
 
-btn1.addEventListener("click", () => {
+btnSmallMenu.addEventListener("click", () => {
   let menu = document.querySelector(".menu");
-  let men1 = document.querySelector(".smallMenu__first");
-  let men2 = document.querySelector(".smallMenu__second");
+  let menuFirst = document.querySelector(".smallMenu__first");
+  let menuSecond = document.querySelector(".smallMenu__second");
   if (clicked == true) {
     menu.style.display = "block";
-    men1.style.display = "none";
-    men2.style.display = "block";
-    hh.style.marginTop = "80px";
+    menuFirst.style.display = "none";
+    menuSecond.style.display = "block";
+    headLine.style.marginTop = "80px";
     nav.style.height = "100%";
 
     clicked = !clicked;
   } else if (clicked == false) {
     menu.style.display = "none";
-    men1.style.display = "block";
-    men2.style.display = "none";
-    hh.style.marginTop = "130px";
+    menuFirst.style.display = "block";
+    menuSecond.style.display = "none";
+    headLine.style.marginTop = "130px";
 
     clicked = !clicked;
   }
