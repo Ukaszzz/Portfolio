@@ -237,6 +237,32 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+.projects__one .git {
+  position: absolute;
+  top: 15%;
+  height: 50px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 70px;
+}
+
+.projects__one .git a {
+  color: red;
+  text-decoration: none;
+  text-align: center;
+}
+
+.projects__one .git p {
+  font-size: 18x;
+  font-family: "Poppins";
 }
 
 .projects__one img {
@@ -284,29 +310,6 @@
   padding: 10px 15px;
   color: #ddd;
   font-family: "Kalam";
-}
-
-.projects__one div .git {
-  height: 50px;
-  margin-bottom: 25px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 40px;
-}
-
-.projects__one div .git a {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-}
-
-.projects__one div .git p {
-  font-size: 12px;
-  font-family: "Poppins";
 }
 
 @media (min-width: 600px) {

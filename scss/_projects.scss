@@ -5,6 +5,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+
+    .git {
+      position: absolute;
+      top: 15%;
+      // background-color: red;
+      height: 50px;
+      margin-bottom: 25px;
+      box-shadow: none;
+      border: none;
+      align-items: center;
+      font-size: 70px;
+
+      a {
+        color: red;
+        text-decoration: none;
+        text-align: center;
+      }
+      p {
+        font-size: 18x;
+        font-family: "Poppins";
+      }
+    }
 
     img {
       width: 80%;
@@ -41,24 +64,6 @@
 
         color: #ddd;
         font-family: "Kalam";
-      }
-      .git {
-        height: 50px;
-        margin-bottom: 25px;
-        box-shadow: none;
-        border: none;
-        align-items: center;
-        font-size: 40px;
-
-        a {
-          color: black;
-          text-decoration: none;
-          text-align: center;
-        }
-        p {
-          font-size: 12px;
-          font-family: "Poppins";
-        }
       }
     }
   }
