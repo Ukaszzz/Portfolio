@@ -5,8 +5,7 @@ nav = document.querySelector(".menu__navigation");
 headLine = document.querySelector(".head__line");
 const btnBack = document.querySelector(".backButton");
 
-window.addEventListener("scroll", function() {
-  console.log("scroll");
+window.addEventListener("scroll", function () {
   if (window.scrollY <= size) {
     nav.style.backgroundColor = "rgb(0,0,0)";
     btnBack.style.display = "none";

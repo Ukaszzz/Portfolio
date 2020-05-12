@@ -14,10 +14,3 @@ setTimeout(() => {
 
   const indexTyping = setInterval(addLetter, time);
 }, 1200);
-
-const projectH1 = document.querySelectorAll(".projects__one  h1");
-console.log(projectH1);
-// const projectP
-// const projectP2
-
-// const add
