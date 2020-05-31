@@ -117,6 +117,7 @@
 }
 
 .skills {
+  min-height: 100vh;
   margin-top: 50px;
   padding-bottom: 50px;
 }
@@ -586,6 +587,96 @@ button:first-of-type:hover {
   padding: 10px;
 }
 
+.contacts form {
+  margin: 20px auto 0 auto;
+  width: 80%;
+  min-height: 340px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.contacts textarea {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 110px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 20px;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.contacts input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.contacts input[type="submit"] {
+  cursor: pointer;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  background-color: rgba(100, 100, 100, 0.329);
+  -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.contacts .btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 0 auto;
+  border: 1px solid #253737;
+  background: #416b68;
+  padding: 10.5px 21px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+          box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  text-shadow: #333333 0 1px 0;
+  color: #e1e1e1;
+}
+
+.contacts .btn:hover {
+  border: 1px solid #253737;
+  text-shadow: #333333 0 1px 0;
+  background: #416b68;
+  color: #fff;
+}
+
+.contacts .btn:active {
+  margin-top: 1px;
+  text-shadow: #333333 0 -1px 0;
+  border: 1px solid #253737;
+  background: #6da5a3;
+  color: #fff;
+  -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+          box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+
 @media (min-width: 600px) {
   .contacts img {
     height: 80px;
@@ -625,21 +716,17 @@ button:first-of-type:hover {
             justify-content: space-between;
     width: 100%;
   }
-  .contacts__socials .social {
-    width: 31%;
-  }
-  .contacts__socials .social img {
-    height: 60px;
-  }
-  .contacts__socials .social p {
+}
+
+@media (min-width: 1370px) {
+  .contacts__wrap .contacts__socials .social p {
     font-size: 20px;
   }
 }
 
-@media (min-width: 1370px) {
-  .contacts__socials .social p {
-    font-size: 30px;
-  }
+form {
+  width: 70%;
+  height: 70%;
 }
 
 .aboutMe {
@@ -650,8 +737,18 @@ button:first-of-type:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+.aboutMe__wrapper {
   min-height: 33vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -660,14 +757,14 @@ button:first-of-type:hover {
           justify-content: space-evenly;
 }
 
-.aboutMe__img {
-  width: 55%;
+.aboutMe__wrapper img {
+  width: 60%;
   margin-top: 20px;
   -webkit-box-shadow: -23px 10px 30px -11px rgba(17, 17, 17, 0.3);
           box-shadow: -23px 10px 30px -11px rgba(17, 17, 17, 0.3);
 }
 
-.aboutMe__wrap h1 {
+.aboutMe__wrapper .aboutMe__wrap h1 {
   max-width: 70%;
   margin: 0 auto;
   padding: 30px;
@@ -675,7 +772,7 @@ button:first-of-type:hover {
   font-family: "Poppins";
 }
 
-.aboutMe__wrap p {
+.aboutMe__wrapper .aboutMe__wrap p {
   max-width: 70%;
   margin: 0 auto;
   padding: 5px;
@@ -684,7 +781,7 @@ button:first-of-type:hover {
 }
 
 @media (min-width: 600px) {
-  .aboutMe__img {
+  .aboutMe img {
     width: 40%;
   }
 }
@@ -696,26 +793,22 @@ button:first-of-type:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutMe__img {
+  .aboutMe img {
     width: 25%;
     margin: 15px;
   }
-  .aboutMe__wrap {
+  .aboutMe .aboutMe__wrap {
     -webkit-box-shadow: 0px 25px 30px 3px rgba(17, 17, 17, 0.3);
             box-shadow: 0px 25px 30px 3px rgba(17, 17, 17, 0.3);
   }
-  .aboutMe__wrap h1 {
+  .aboutMe .aboutMe__wrap h1 {
     max-width: 80%;
     font-size: 30px;
   }
-  .aboutMe__wrap p {
+  .aboutMe .aboutMe__wrap p {
     max-width: 80%;
     font-size: 20px;
   }
-}
-
-.aboutMe {
-  text-align: center;
 }
 
 .waves {
@@ -723,7 +816,6 @@ button:first-of-type:hover {
   position: relative;
   width: 100%;
   margin-bottom: -7px;
-  /*Fix for safari gap*/
   min-height: 100px;
   max-height: 250px;
   z-index: -1;

@@ -1,42 +1,43 @@
 .aboutMe {
   display: flex;
   flex-direction: column;
+  text-align: center;
 
-  min-height: 33vh;
-  // position: absolute;
-  display: flex;
-  // flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  &__img {
-    width: 55%;
-    margin-top: 20px;
-    // padding: 10px;
-    // border-bottom: 5px solid grey;
-    // border-left: 5px solid grey;
-    box-shadow: -23px 10px 30px -11px rgba(17, 17, 17, 0.3);
-  }
-  &__wrap {
-    h1 {
-      max-width: 70%;
-      margin: 0 auto;
-      padding: 30px;
+  &__wrapper {
+    min-height: 33vh;
 
-      text-align: center;
-      font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    img {
+      width: 60%;
+      margin-top: 20px;
+
+      box-shadow: -23px 10px 30px -11px rgba(17, 17, 17, 0.3);
     }
-    p {
-      max-width: 70%;
-      margin: 0 auto;
-      padding: 5px;
-      margin-bottom: 20px;
-      font-family: "Kalam";
+    .aboutMe__wrap {
+      h1 {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 30px;
+
+        text-align: center;
+        font-family: "Poppins";
+      }
+      p {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-family: "Kalam";
+      }
     }
   }
 }
 @media (min-width: 600px) {
   .aboutMe {
-    &__img {
+    img {
       width: 40%;
     }
   }
@@ -46,11 +47,11 @@
   .aboutMe {
     flex-direction: column;
 
-    &__img {
+    img {
       width: 25%;
       margin: 15px;
     }
-    &__wrap {
+    .aboutMe__wrap {
       box-shadow: 0px 25px 30px 3px rgba(17, 17, 17, 0.3);
       h1 {
         max-width: 80%;
@@ -64,23 +65,12 @@
   }
 }
 
-.aboutMe {
-  // position: relative;
-  text-align: center;
-  // background: linear-gradient(
-  //   60deg,
-  //   rgb(149, 148, 151) 0%,
-  //   rgba(0, 172, 193, 1) 100%
-  // );
-}
-
 .waves {
   display: block;
   position: relative;
   width: 100%;
-  // height: 80vh;
-  // top: -150px;
-  margin-bottom: -7px; /*Fix for safari gap*/
+
+  margin-bottom: -7px;
   min-height: 100px;
   max-height: 250px;
   z-index: -1;
