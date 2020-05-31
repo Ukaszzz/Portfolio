@@ -1,6 +1,6 @@
 .backButton {
   bottom: 0;
-  max-width: 1370px;
+  max-width: 90%;
   position: fixed;
   width: 100%;
   display: flex;
@@ -17,11 +17,12 @@
   font-size: 30px;
 
   color: white;
-  background-color: transparent;
-  border-radius: 30%;
-  border-color: rgb(0, 0, 0);
+  background-color: lightblue;
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
 }
 
 .fas {
-  color: rgb(255, 153, 0);
+  color: rgb(238, 238, 238);
 }

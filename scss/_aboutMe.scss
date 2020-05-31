@@ -1,7 +1,13 @@
 .aboutMe {
   display: flex;
   flex-direction: column;
+
+  min-height: 33vh;
+  // position: absolute;
+  display: flex;
+  // flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   &__img {
     width: 55%;
     margin-top: 20px;
@@ -28,7 +34,6 @@
     }
   }
 }
-
 @media (min-width: 600px) {
   .aboutMe {
     &__img {
@@ -39,7 +44,7 @@
 
 @media (min-width: 900px) {
   .aboutMe {
-    flex-direction: row;
+    flex-direction: column;
 
     &__img {
       width: 25%;
@@ -56,5 +61,64 @@
         font-size: 20px;
       }
     }
+  }
+}
+
+.aboutMe {
+  // position: relative;
+  text-align: center;
+  // background: linear-gradient(
+  //   60deg,
+  //   rgb(149, 148, 151) 0%,
+  //   rgba(0, 172, 193, 1) 100%
+  // );
+}
+
+.waves {
+  display: block;
+  position: relative;
+  width: 100%;
+  // height: 80vh;
+  // top: -150px;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 250px;
+  z-index: -1;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 12s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 5s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 10s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
   }
 }
