@@ -153,6 +153,10 @@
 
 @media (min-width: 900px) {
   .contacts {
+    form {
+      width: 50%;
+      height: 50%;
+    }
     h1 {
       margin-top: 15px;
 
@@ -160,7 +164,7 @@
       font-size: 30px;
     }
     &__wrap {
-      width: 90%;
+      width: 80%;
     }
     &__socials {
       display: flex;
@@ -182,8 +186,4 @@
       }
     }
   }
-}
-form {
-  width: 70%;
-  height: 70%;
 }

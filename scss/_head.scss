@@ -47,6 +47,7 @@
     transition: linear 0.3s;
     font-family: "Poppins";
     animation: opacityBtn 6s;
+    cursor: pointer;
   }
   &__but:hover {
     border: 2px solid lightblue;

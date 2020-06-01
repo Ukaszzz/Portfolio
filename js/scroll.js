@@ -8,44 +8,39 @@ const btn8 = document.querySelector(".menu__home");
 
 btn2.addEventListener("click", () =>
   window.scrollTo({
-    top:
-      document.querySelector(".projects").offsetTop - 0.1 * window.innerHeight,
+    top: document.querySelector(".projects").offsetTop,
     behavior: "smooth",
   })
 );
 
 btn3.addEventListener("click", () =>
   window.scrollTo({
-    top:
-      document.querySelector(".aboutMe").offsetTop - 0.1 * window.innerHeight,
+    top: document.querySelector(".aboutMe").offsetTop,
     behavior: "smooth",
   })
 );
 btn6.addEventListener("click", () =>
   window.scrollTo({
-    top:
-      document.querySelector(".projects").offsetTop - 0.1 * window.innerHeight,
+    top: document.querySelector(".projects").offsetTop,
     behavior: "smooth",
   })
 );
 
 btn4.addEventListener("click", () =>
   window.scrollTo({
-    top: document.querySelector(".skills").offsetTop - 0.1 * window.innerHeight,
+    top: document.querySelector(".skills").offsetTop,
     behavior: "smooth",
   })
 );
 btn5.addEventListener("click", () =>
   window.scrollTo({
-    top:
-      document.querySelector(".contacts").offsetTop - 0.1 * window.innerHeight,
+    top: document.querySelector(".contacts").offsetTop,
     behavior: "smooth",
   })
 );
 btn7.addEventListener("click", () =>
   window.scrollTo({
-    top:
-      document.querySelector(".contacts").offsetTop - 0.1 * window.innerHeight,
+    top: document.querySelector(".contacts").offsetTop,
     behavior: "smooth",
   })
 );

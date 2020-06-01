@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.842);
     // height: 100%;
     position: fixed;
     top: 0;
@@ -50,25 +49,6 @@
 @media (min-width: 900px) {
   .menu {
     display: flex;
-    // background-color: transparent;
-    // flex-grow: 1;
-
-    button {
-      // height: 200px;
-      width: 100%;
-      transition: all 0.5s;
-      padding: 0;
-      margin: 0;
-      border-bottom: 10px solid lightblue;
-      // border-radius: 5px;
-      // margin: 5px;
-      color: transparent;
-      flex-grow: 1;
-      // i {
-      //   color: black;
-      //   height: 100%;
-      // }
-    }
 
     &__navigation {
       display: flex;
@@ -76,36 +56,54 @@
 
       justify-content: space-between;
       width: 7%;
-      height: 100vh;
-      left: 93%;
+      top: 25%;
 
-      max-width: 1370px;
-      padding-right: 0;
+      right: 20px; // max-width: 1370px;
+      // padding-right: 0;
+      // background-color: transparent;
+      button {
+        transition: all 0.5s;
 
-      background: linear-gradient(
-        185deg,
-        rgba(94, 106, 110, 1) 47%,
-        rgba(95, 197, 218, 1) 100%
-      );
-      // background-color: #22e2ed;
-      // overflow: hidden;
-      // height: 9%;
+        padding: 0;
+        margin: 7px 0;
+        height: 80px;
+        width: 80px;
+
+        border-radius: 50%;
+        // margin: 5px;
+        color: transparent;
+        flex-grow: 1;
+        color: white;
+
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+        font-size: 15px;
+      }
     }
 
     button:nth-of-type(1) {
       background: #20232a;
     }
+    button:nth-of-type(2) {
+      background: #ff0000;
+    }
+    button:nth-of-type(3) {
+      background: #24a10b;
+    }
+    button:nth-of-type(4) {
+      background: #2758c9;
+    }
+    button:nth-of-type(5) {
+      background: #c1c416;
+    }
     button:hover {
-      // flex: 2;
-      // height: 40%;
+      width: 100px;
+      height: 100px;
+      right: 30px;
 
-      width: 200%;
-
-      background-color: rgba(68, 191, 207, 0.5);
-      // opacity: 1;
       animation: menu 0.5s;
-      right: 100%;
-      color: white;
+    }
+    button:hover::after {
+      left: -100%;
     }
   }
 }
@@ -116,8 +114,20 @@ button:first-of-type:hover {
 
 @media (min-width: 1370px) {
   .menu {
-    button {
-      font-size: 40px;
+    &__navigation {
+      // background-color: transparent;
+      right: -20px;
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    &__navigation {
+      background-color: rgba(0, 0, 0, 0.842);
     }
   }
 }
@@ -127,6 +137,6 @@ button:first-of-type:hover {
     right: 0%;
   }
   100% {
-    right: 100%;
+    right: 30px;
   }
 }

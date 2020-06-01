@@ -6,12 +6,17 @@ headLine = document.querySelector(".head__line");
 const btnBack = document.querySelector(".backButton");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY <= size) {
-    nav.style.backgroundColor = "rgb(0,0,0)";
+  if (window.innerWidth < 900) {
+    if (window.scrollY <= size) {
+      nav.style.backgroundColor = "rgb(0,0,0)";
+      btnBack.style.display = "none";
+    } else if (window.scrollY >= size) {
+      nav.style.backgroundColor = "rgba(0,0,0,0.7)";
+      btnBack.style.display = "flex";
+    }
+  } else {
+    nav.style.backgroundColor = "transparent";
     btnBack.style.display = "none";
-  } else if (window.scrollY >= size) {
-    nav.style.backgroundColor = "rgba(0,0,0,0.7)";
-    btnBack.style.display = "flex";
   }
 });
 
