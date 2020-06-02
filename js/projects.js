@@ -18,7 +18,7 @@ const ProjetsList = [
     a: "ukaszzz.github.io/memory/",
   },
   {
-    img: "img/list.jpg",
+    img: "img/toDo.png",
 
     h1: "To do list",
     p: " Aplikacja do zapisywania rzeczy do zrobienia",
@@ -44,7 +44,6 @@ const p = document.querySelector(".projects__one .description");
 const p2 = document.querySelector(".projects__one .used-skills");
 const a = document.querySelector(".projects__one a");
 
-console.log(img, h1, p, p2, a);
 let active = 0;
 
 const changeSlide = () => {
@@ -54,19 +53,6 @@ const changeSlide = () => {
   h1.textContent = ProjetsList[active].text;
   popup = ProjetsList[active].popup;
   active++;
-};
-
-const keyChangeSlide = (e) => {
-  if (e.keyCode === 37 || e.keyCode === 39) {
-    if (active == 0) {
-      active = ProjetsList.length - 1;
-    } else if (active === ProjetsList.length) {
-      active = 0;
-    }
-    e.keyCode == 37 ? active-- : active++;
-
-    section.innerHTML = ProjetsList[active];
-  }
 };
 
 const buttonLeft = () => {
@@ -87,7 +73,6 @@ const buttonRight = () => {
   } else {
     active++;
   }
-  //   section.innerHTML = ProjetsList[active];
   img.src = ProjetsList[active].img;
   h1.textContent = ProjetsList[active].h1;
   p.textContent = ProjetsList[active].p;

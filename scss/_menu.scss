@@ -1,18 +1,12 @@
-// $ease: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-
 .menu {
-  // padding: 10px 15px;
-  margin-bottom: 50px;
   font-size: 15px;
   background-color: lightblue;
   display: none;
-  z-index: 1;
-
+  z-index: 99;
   &__navigation {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    // height: 100%;
     position: fixed;
     top: 0;
 
@@ -49,32 +43,23 @@
 @media (min-width: 900px) {
   .menu {
     display: flex;
-
     &__navigation {
       display: flex;
       flex-direction: column;
-
       justify-content: space-between;
       width: 7%;
       top: 25%;
-
-      right: 20px; // max-width: 1370px;
-      // padding-right: 0;
-      // background-color: transparent;
+      right: 20px;
       button {
         transition: all 0.5s;
-
         padding: 0;
         margin: 7px 0;
         height: 80px;
         width: 80px;
-
         border-radius: 50%;
-        // margin: 5px;
         color: transparent;
         flex-grow: 1;
         color: white;
-
         box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
         font-size: 15px;
       }
@@ -99,7 +84,6 @@
       width: 100px;
       height: 100px;
       right: 30px;
-
       animation: menu 0.5s;
     }
     button:hover::after {
@@ -107,7 +91,6 @@
     }
   }
 }
-
 button:first-of-type:hover {
   background: #20232a;
 }
@@ -115,7 +98,6 @@ button:first-of-type:hover {
 @media (min-width: 1370px) {
   .menu {
     &__navigation {
-      // background-color: transparent;
       right: -20px;
       button {
         font-size: 14px;

@@ -172,6 +172,15 @@
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%;
+      .social {
+        img {
+          width: 60px;
+          height: 60px;
+        }
+        p {
+          font-size: 17px;
+        }
+      }
     }
   }
 }

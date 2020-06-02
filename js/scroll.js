@@ -1,50 +1,51 @@
-const btn2 = document.querySelector(".menu__portfoli");
-const btn3 = document.querySelector(".menu__me");
-const btn4 = document.querySelector(".menu__offer");
-const btn5 = document.querySelector(".menu__contact ");
-const btn6 = document.querySelector(".head__portfolio");
-const btn7 = document.querySelector(".head__kontakt");
-const btn8 = document.querySelector(".menu__home");
+const btnPortfolio = document.querySelector(".menu__portfoli");
+const btnAboutMe = document.querySelector(".menu__me");
+const btnOffer = document.querySelector(".menu__offer");
+const btnContact = document.querySelector(".menu__contact ");
+const btnPortfolioHead = document.querySelector(".head__portfolio");
+const btnContactHead = document.querySelector(".head__kontakt");
+const btnHome = document.querySelector(".menu__home");
+// const btnBack = document.querySelector(".backButton");
 
-btn2.addEventListener("click", () =>
+btnPortfolio.addEventListener("click", () =>
   window.scrollTo({
     top: document.querySelector(".projects").offsetTop,
     behavior: "smooth",
   })
 );
 
-btn3.addEventListener("click", () =>
+btnAboutMe.addEventListener("click", () =>
   window.scrollTo({
     top: document.querySelector(".aboutMe").offsetTop,
     behavior: "smooth",
   })
 );
-btn6.addEventListener("click", () =>
+btnPortfolioHead.addEventListener("click", () =>
   window.scrollTo({
     top: document.querySelector(".projects").offsetTop,
     behavior: "smooth",
   })
 );
 
-btn4.addEventListener("click", () =>
+btnOffer.addEventListener("click", () =>
   window.scrollTo({
     top: document.querySelector(".skills").offsetTop,
     behavior: "smooth",
   })
 );
-btn5.addEventListener("click", () =>
+btnContact.addEventListener("click", () =>
   window.scrollTo({
     top: document.querySelector(".contacts").offsetTop,
     behavior: "smooth",
   })
 );
-btn7.addEventListener("click", () =>
+btnContactHead.addEventListener("click", () =>
   window.scrollTo({
     top: document.querySelector(".contacts").offsetTop,
     behavior: "smooth",
   })
 );
-btn8.addEventListener("click", () =>
+btnHome.addEventListener("click", () =>
   window.scrollTo({
     top: 0,
     behavior: "smooth",
