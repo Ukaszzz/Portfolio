@@ -5,12 +5,12 @@
   justify-content: space-evenly;
   transform-style: preserve-3d;
 
-  transform: translate3d(10, 0, 0);
+  transform: translate3d(0, 0, 0);
 
   transition: background-color 3s ease-in-out 2s;
 
-  // perspective: 1000px;
-  // position: relative;
+  perspective: 500px;
+
   overflow: hidden;
 
   background-size: cover;
@@ -112,9 +112,9 @@
 .head:after {
   position: absolute;
   z-index: 1;
-  width: 150%;
-  height: 400%;
-  // top: 30%;
+  width: 150vh;
+  height: 350vh;
+  // top: -5%;
   left: 0px;
   content: "";
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQB0vTs4VonFvh1bb-LT9sSR-kQNbw_KK7f5JNxBGw5UP6Tv71e&usqp=CAU);
@@ -135,8 +135,9 @@
 
   animation-iteration-count: infinite;
 
-  transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%)
-    translateX(-14%) translateZ(370px);
+  transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(0)
+    translateX(0%) translateZ(0);
+
   z-index: -1;
 }
 
@@ -149,8 +150,8 @@
   }
 }
 
-@media (min-width: 900px) {
-  .head:after {
-    top: 5%;
-  }
-}
+// @media (min-width: 900px) {
+//   .head:after {
+//     top: 5%;
+//   }
+// }

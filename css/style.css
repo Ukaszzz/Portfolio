@@ -191,10 +191,12 @@ button:first-of-type:hover {
           justify-content: space-evenly;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform: translate3d(10, 0, 0);
-          transform: translate3d(10, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   -webkit-transition: background-color 3s ease-in-out 2s;
   transition: background-color 3s ease-in-out 2s;
+  -webkit-perspective: 500px;
+          perspective: 500px;
   overflow: hidden;
   background-size: cover;
   text-align: center;
@@ -311,8 +313,8 @@ button:first-of-type:hover {
 .head:after {
   position: absolute;
   z-index: 1;
-  width: 150%;
-  height: 400%;
+  width: 150vh;
+  height: 350vh;
   left: 0px;
   content: "";
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQB0vTs4VonFvh1bb-LT9sSR-kQNbw_KK7f5JNxBGw5UP6Tv71e&usqp=CAU);
@@ -335,8 +337,8 @@ button:first-of-type:hover {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%) translateX(-14%) translateZ(370px);
-          transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%) translateX(-14%) translateZ(370px);
+  -webkit-transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(0) translateX(0%) translateZ(0);
+          transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(0) translateX(0%) translateZ(0);
   z-index: -1;
 }
 
@@ -355,12 +357,6 @@ button:first-of-type:hover {
   }
   100% {
     background-position: 0% -475px;
-  }
-}
-
-@media (min-width: 900px) {
-  .head:after {
-    top: 5%;
   }
 }
 
