@@ -1,58 +1,98 @@
 .aboutMe {
-  .waves {
-    display: block;
-    position: relative;
-    width: 100%;
-
-    margin-bottom: -7px;
-    min-height: 100px;
-    max-height: 250px;
-    z-index: 1;
-  }
   background-color: #ddd;
   display: flex;
+  position: relative;
   flex-direction: column;
   text-align: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  &__wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .waves {
+      display: block;
+      position: relative;
+      width: 100%;
+      min-height: 100px;
+      max-height: 200px;
+      z-index: 0;
+    }
+  }
+  .btn-portfolio-3d {
+    margin: 40px auto;
+    a {
+      text-decoration: none;
+      color: white;
+
+      border: none;
+      border-radius: 10px;
+      padding: 20px 50px;
+      font-size: 15px;
+      background-color: red;
+      transition: background-color 0.3s;
+    }
+  }
+
+  .btn-portfolio-3d a:hover {
+    background-color: rgb(139, 0, 0);
+  }
+
   &__wrapper {
     min-height: 33vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
     img {
-      width: 50%;
+      width: 30%;
       margin-top: 20px;
       box-shadow: -23px 10px 30px -11px rgba(0, 0, 0, 0.3);
     }
     .aboutMe__wrap {
+      display: flex;
+      flex-direction: column;
       border-radius: 15px;
       width: 80%;
-      height: 40%;
       background-color: rgb(58, 57, 57);
       margin-top: 10px;
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        font-size: 55px;
+        .icon {
+          margin: 0 20px;
+        }
+        i {
+          margin: 15px 15px;
+          padding: 5px 5px;
+          z-index: 10;
+          color: rgb(241, 235, 223);
+        }
+      }
       h1 {
         max-width: 70%;
         margin: 0 auto;
-        padding: 30px;
+        padding: 10px;
         font-size: 14px;
         text-align: center;
         font-family: "Poppins";
         color: rgb(177, 177, 177);
-      }
-      p {
-        max-width: 70%;
-        margin: 0 auto;
-        padding: 5px;
-        margin-bottom: 20px;
-        font-family: "Kalam";
       }
     }
   }
 }
 @media (min-width: 600px) {
   .aboutMe {
-    img {
-      width: 40%;
+    .aboutMe__wrap {
+      .social-icons {
+        font-size: 45px;
+        img {
+          width: 40%;
+        }
+      }
     }
   }
 }
@@ -79,6 +119,16 @@
       p {
         max-width: 80%;
         font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutMe {
+    .aboutMe__wrap {
+      .social-icons {
+        font-size: 60px;
       }
     }
   }
@@ -116,7 +166,14 @@
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
-    height: 60px;
     min-height: 80px;
+  }
+}
+
+@media (max-height: 500px) {
+  .aboutMe {
+    &__wave {
+      display: none;
+    }
   }
 }

@@ -7,8 +7,8 @@
   button {
     position: absolute;
     top: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
     font-size: 20px;
     border: none;
@@ -28,7 +28,7 @@
     right: 0;
   }
   button:hover {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(212, 28, 28);
     color: #fff;
   }
   &__one {
@@ -65,7 +65,6 @@
       padding: 6px;
       border-top: 4px solid white;
       border-right: 4px solid white;
-      box-shadow: 22px -19px 15px 1px rgba(170, 170, 170, 0.7);
     }
 
     div {
@@ -75,9 +74,7 @@
       width: 70%;
       margin: 20px auto;
       padding: 0 0 10px 5px;
-      border-bottom: 4px solid white;
-      border-left: 4px solid white;
-      box-shadow: -19px 22px 15px 1px rgba(170, 170, 170, 0.7);
+
       h1 {
         font-size: 20px;
         padding: 15px 20px;
@@ -136,12 +133,15 @@
     .btn-right {
       right: 10%;
     }
+    .btn-left {
+      left: 10%;
+    }
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     &__one {
-      margin: 50px 10% 50px 0;
-      box-shadow: 0px 0px 15px 1px rgba(170, 170, 170, 0.7);
+      margin: 50px 0 50px 0;
+
       flex-direction: column;
       width: 64%;
       img {
@@ -161,6 +161,8 @@
         }
         p {
           font-size: 20px;
+
+          text-align: center;
         }
         .git {
           margin: 0;
@@ -176,6 +178,13 @@
 
 @media (min-width: 1400px) {
   .projects {
+    .btn-left {
+      left: 18%;
+    }
+
+    .btn-right {
+      right: 18%;
+    }
     &__one {
       width: 70%;
       img {
