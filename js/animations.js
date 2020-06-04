@@ -1,6 +1,6 @@
 const spanText = document.querySelector(".head h2");
 spanText.textContent = " ";
-const txt = "in my world".toUpperCase();
+const txt = "on my website".toUpperCase();
 
 let indexText = 0;
 const time = 120;

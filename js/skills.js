@@ -11,3 +11,4 @@ for (var i = 0, l = items.length; i < l; i++) {
       4
     ) + "%";
 }
+AOS.init();

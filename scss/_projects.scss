@@ -1,5 +1,5 @@
 .projects {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,6 +31,12 @@
     background-color: rgb(212, 28, 28);
     color: #fff;
   }
+
+  button:focus {
+    background-color: rgba(100, 100, 100, 0.329);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+  }
   &__one {
     display: flex;
     flex-direction: column;
@@ -49,6 +55,11 @@
         color: black;
         text-decoration: none;
         text-align: center;
+      }
+      a:focus {
+        background-color: rgba(100, 100, 100, 0.329);
+        box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+        overflow: hidden;
       }
       p {
         font-size: 15px;

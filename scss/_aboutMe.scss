@@ -1,5 +1,5 @@
 .aboutMe {
-  background-color: #ddd;
+  // background: radial-gradient(circle at 0 100%, #191970, #000022, #000000);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -11,9 +11,10 @@
     bottom: 0;
     width: 100%;
     .waves {
+      position: absolute;
       display: block;
       position: relative;
-      width: 100%;
+
       min-height: 100px;
       max-height: 200px;
       z-index: 0;
@@ -34,6 +35,11 @@
     }
   }
 
+  .btn-portfolio-3d a:focus {
+    background-color: rgba(100, 100, 100, 0.329);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+  }
   .btn-portfolio-3d a:hover {
     background-color: rgb(139, 0, 0);
   }
@@ -64,6 +70,11 @@
         font-size: 55px;
         .icon {
           margin: 0 20px;
+          a:focus {
+            background-color: rgba(100, 100, 100, 0.329);
+            box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+          }
         }
         i {
           margin: 15px 15px;

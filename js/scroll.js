@@ -6,54 +6,74 @@ const btnPortfolioHead = document.querySelector(".head__portfolio");
 const btnContactHead = document.querySelector(".head__kontakt");
 const btnHome = document.querySelector(".menu__home");
 // const btnBack = document.querySelector(".backButton");
+const loader = document.querySelector(".loader-wrap");
 
-btnPortfolio.addEventListener("click", () =>
+const animation = () => {
+  loader.style.display = "block";
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 500);
+};
+
+btnPortfolio.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".projects").offsetTop,
-    behavior: "smooth",
-  })
-);
+    // behavior: "smooth",
+  });
+  animation();
+});
 
-btnAboutMe.addEventListener("click", () =>
+btnAboutMe.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".aboutMe").offsetTop,
-    behavior: "smooth",
-  })
-);
-btnPortfolioHead.addEventListener("click", () =>
+    // behavior: "smooth",
+  });
+  animation();
+});
+btnPortfolioHead.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".projects").offsetTop,
-    behavior: "smooth",
-  })
-);
+    // behavior: "smooth",
+  });
+  animation();
+});
 
-btnOffer.addEventListener("click", () =>
+btnOffer.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".skills").offsetTop,
-    behavior: "smooth",
-  })
-);
-btnContact.addEventListener("click", () =>
+    // behavior: "smooth",
+  });
+  animation();
+});
+btnContact.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".contacts").offsetTop,
-    behavior: "smooth",
-  })
-);
-btnContactHead.addEventListener("click", () =>
+    // behavior: "smooth",
+  });
+  animation();
+});
+btnContactHead.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".contacts").offsetTop,
-    behavior: "smooth",
-  })
-);
-btnHome.addEventListener("click", () =>
+    // behavior: "smooth",
+  });
+  animation();
+});
+btnHome.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
-  })
-);
-btnBack.addEventListener("click", () =>
+    // behavior: "smooth",
+  });
+  animation();
+});
+btnBack.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
-  })
-);
+    // behavior: "smooth",
+  });
+  animation();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  animation();
+});
