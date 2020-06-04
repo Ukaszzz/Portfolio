@@ -1,5 +1,5 @@
 .loader-wrap {
-  display: none;
+  display: block;
   position: fixed;
   height: 100vh;
   width: 100%;

@@ -5,20 +5,19 @@ const btnContact = document.querySelector(".menu__contact ");
 const btnPortfolioHead = document.querySelector(".head__portfolio");
 const btnContactHead = document.querySelector(".head__kontakt");
 const btnHome = document.querySelector(".menu__home");
-// const btnBack = document.querySelector(".backButton");
+
 const loader = document.querySelector(".loader-wrap");
 
 const animation = () => {
   loader.style.display = "block";
   setTimeout(function () {
     loader.style.display = "none";
-  }, 500);
+  }, 300);
 };
 
 btnPortfolio.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".projects").offsetTop,
-    // behavior: "smooth",
   });
   animation();
 });
@@ -26,14 +25,12 @@ btnPortfolio.addEventListener("click", () => {
 btnAboutMe.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".aboutMe").offsetTop,
-    // behavior: "smooth",
   });
   animation();
 });
 btnPortfolioHead.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".projects").offsetTop,
-    // behavior: "smooth",
   });
   animation();
 });
@@ -41,39 +38,35 @@ btnPortfolioHead.addEventListener("click", () => {
 btnOffer.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".skills").offsetTop,
-    // behavior: "smooth",
   });
   animation();
 });
 btnContact.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".contacts").offsetTop,
-    // behavior: "smooth",
   });
   animation();
 });
 btnContactHead.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".contacts").offsetTop,
-    // behavior: "smooth",
   });
   animation();
 });
 btnHome.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    // behavior: "smooth",
   });
   animation();
 });
 btnBack.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    // behavior: "smooth",
   });
   animation();
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-  animation();
+  loader.style.display = "none";
+  console.log("w");
 });
