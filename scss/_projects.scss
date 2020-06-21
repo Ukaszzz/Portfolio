@@ -1,5 +1,4 @@
 .projects {
-  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +14,7 @@
     background: transparent;
     border-radius: 20%;
     transition: background-color 0.4s, color 0.4s;
-    background-color: rgb(32, 32, 32);
+    background-color: $bgc-dark;
     cursor: pointer;
     z-index: 1;
   }
@@ -28,7 +27,7 @@
     right: 0;
   }
   button:hover {
-    background-color: rgb(212, 28, 28);
+    background-color: $button-color;
     color: #fff;
   }
 
@@ -179,7 +178,7 @@
           margin: 0;
           font-size: 50px;
           p {
-            font-size: 30px;
+            font-size: 20px;
           }
         }
       }
@@ -189,6 +188,13 @@
 
 @media (min-width: 1400px) {
   .projects {
+    min-height: 700px;
+    height: 100vh;
+    button {
+      height: 7vh;
+      width: 7vh;
+      font-size: 25px;
+    }
     .btn-left {
       left: 18%;
     }
@@ -198,9 +204,10 @@
     }
     &__one {
       width: 70%;
+      justify-content: flex-start;
       img {
-        width: 70%;
-        height: 50%;
+        width: 60%;
+        height: 45vh;
       }
     }
   }

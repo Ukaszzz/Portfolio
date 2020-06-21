@@ -8,7 +8,13 @@
 body {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to top, #103b2a, #0f3443);
+  background-image: radial-gradient(
+      60% 60% ellipse at top left,
+      #0c535c 20%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(50% 60% ellipse at bottom right, #0c535c 20%, #0f3443 100%);
+  background-attachment: fixed;
 }
 
 @media (min-width: 900px) {
@@ -18,3 +24,5 @@ body {
     margin: 0;
   }
 }
+$button-color: #c90d0dcb;
+$bgc-dark: rgba(5, 5, 5, 0.479);

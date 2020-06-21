@@ -22,21 +22,6 @@
       color: white;
       cursor: pointer;
     }
-
-    // button::after {
-    //   position: absolute;
-    //   content: "";
-    //   bottom: 0;
-    //   left: -100%;
-    //   width: 100%;
-    //   height: 6px;
-    //   background-color: white;
-    //   transition: 0.5s linear;
-    // }
-
-    // button:hover::after {
-    //   left: 0;
-    // }
   }
 }
 
@@ -59,34 +44,25 @@
         border-radius: 50%;
         color: transparent;
         flex-grow: 1;
-        color: white;
+        color: #fcfcfc;
         box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
         font-size: 15px;
+        background: $bgc-dark;
       }
     }
-
     button:nth-of-type(1) {
-      background: #20232a;
+      background: $button-color;
 
       font-size: 30px;
     }
-    button:nth-of-type(2) {
-      background: #ff0000;
-    }
-    button:nth-of-type(3) {
-      background: #24a10b;
-    }
-    button:nth-of-type(4) {
-      background: #2758c9;
-    }
-    button:nth-of-type(5) {
-      background: #c1c416;
-    }
+
     button:hover {
       width: 100px;
       height: 100px;
       right: 30px;
       animation: menu 0.5s;
+      color: white;
+      background: rgba(5, 5, 5, 0.692);
     }
     button:hover::after {
       left: -100%;
@@ -105,18 +81,24 @@ button:first-of-type:hover {
 @media (min-width: 1370px) {
   .menu {
     &__navigation {
+      top: 15%;
       right: -20px;
       button {
         font-size: 14px;
+        margin-top: 50px;
+        min-width: 90px;
+        min-height: 90px;
+        height: 10vh;
+        width: 10vh;
+        font-size: 18px;
+        font-family: "ndie Flower";
       }
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  .menu {
-    &__navigation {
-      background-color: rgba(0, 0, 0, 0.842);
+      button:hover {
+        width: 150px;
+        height: 150px;
+        right: 30px;
+        font-size: 26px;
+      }
     }
   }
 }

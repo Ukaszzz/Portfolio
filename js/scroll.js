@@ -2,7 +2,7 @@ const btnPortfolio = document.querySelector(".menu__portfoli");
 const btnAboutMe = document.querySelector(".menu__me");
 const btnOffer = document.querySelector(".menu__offer");
 const btnContact = document.querySelector(".menu__contact ");
-const btnPortfolioHead = document.querySelector(".head__portfolio");
+const btnPortfolioHead = document.querySelector(".head__projects");
 const btnContactHead = document.querySelector(".head__kontakt");
 const btnHome = document.querySelector(".menu__home");
 
@@ -68,5 +68,4 @@ btnBack.addEventListener("click", () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   loader.style.display = "none";
-  console.log("w");
 });

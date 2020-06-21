@@ -9,13 +9,13 @@ const ProjetsList = [
     a: "ukaszzz.github.io/game/",
   },
   {
-    img: "img/memory.jpg",
+    img: "img/memory.png",
 
     h1: "Memory Game",
     p:
       "Prosta gra logiczna memory, która rozwija pamięć, spostrzegawczość oraz refleks",
     p2: "HTML5, CSS3 oraz JavaScript",
-    a: "ukaszzz.github.io/memory/",
+    a: "https://ukaszzz.github.io/memory/",
   },
   {
     img: "img/toDo.png",
@@ -23,11 +23,25 @@ const ProjetsList = [
     h1: "To do list",
     p: " Aplikacja do zapisywania rzeczy do zrobienia",
     p2: "HTML5, CSS3 oraz JavaScript",
-    a: "ukaszzz.github.io/toDoApp/",
+    a: "https://ukaszzz.github.io/toDoApp/",
+  },
+  {
+    img: "img/pz.png",
+    h1: "metodyka p/z",
+    p:
+      " Aplikacja do wyznaczenia zasobów początkowych gazu ziemnego w złożu metodą p/z",
+    p2: "HTML5, CSS3(SCSS) oraz JavaScript",
+    a: "https://ukaszzz.github.io/application-for-the-petroleum-industry/",
+  },
+  {
+    img: "img/AOF.png",
+    h1: "AOF",
+    p: " Aplikacjado wyznaczania wydatku potencjalnego odwiertu (ang. AOF)",
+    p2: "HTML5, CSS3(SCSS) oraz JavaScript",
+    a: "https://ukaszzz.github.io/app-for-calculating-AOF/",
   },
   {
     img: "img/fatBear.jpg",
-
     h1: "Fat Bear",
     p:
       " Strona wizytówka wykonana dla firmy Fat Bear. firmy oferującej usługi gastronomiczne",

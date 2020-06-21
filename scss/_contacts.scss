@@ -187,11 +187,20 @@
 }
 
 @media (min-width: 1370px) {
-  .contacts__wrap {
-    .contacts__socials {
-      .social {
-        p {
-          font-size: 20px;
+  .contacts {
+    h1 {
+      font-size: 50px;
+    }
+    .contacts__wrap {
+      .contacts__socials {
+        .social {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          p {
+            font-size: 30px;
+          }
         }
       }
     }
