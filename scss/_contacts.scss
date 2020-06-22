@@ -1,16 +1,13 @@
 .contacts {
-  background-image: url("../img//landscape-404072_1920.jpg");
-  background-position: 50% 50%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 40px;
   min-height: 100vh;
-  img {
-    height: 50px;
+  border-top: 2px solid white;
+  i {
+    font-size: 30px;
+    color: black;
   }
   p {
     color: white;
@@ -32,7 +29,7 @@
   }
   &__socials {
     width: 70%;
-
+    margin: 0 auto;
     .social {
       display: flex;
 
@@ -137,8 +134,8 @@
 
 @media (min-width: 600px) {
   .contacts {
-    img {
-      height: 80px;
+    i {
+      font-size: 55px;
     }
     p {
       font-size: 25px;
@@ -148,6 +145,11 @@
     }
     &__socials {
       width: 80%;
+      .social {
+        i {
+          font-size: 40px;
+        }
+      }
     }
   }
 }
@@ -165,18 +167,17 @@
       font-size: 30px;
     }
     &__wrap {
-      width: 80%;
+      width: 90%;
     }
     &__socials {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 100%;
+      width: 80%;
       .social {
-        img {
-          width: 60px;
-          height: 60px;
+        i {
+          font-size: 40px;
         }
         p {
           font-size: 17px;
@@ -188,18 +189,25 @@
 
 @media (min-width: 1370px) {
   .contacts {
+    form {
+      width: 45%;
+      input {
+        font-size: 15px;
+      }
+    }
     h1 {
-      font-size: 50px;
+      font-size: 40px;
     }
     .contacts__wrap {
+      width: 76%;
       .contacts__socials {
+        margin: 0 auto;
         .social {
-          img {
-            width: 100px;
-            height: 100px;
+          i {
+            font-size: 50px;
           }
           p {
-            font-size: 30px;
+            font-size: 20px;
           }
         }
       }

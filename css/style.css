@@ -199,7 +199,7 @@ body {
 }
 
 .menu__navigation button {
-  font-family: "Kalam";
+  font-family: "popins";
   position: relative;
   padding: 10px 20px;
   margin: 10px;
@@ -209,6 +209,14 @@ body {
   overflow: hidden;
   color: white;
   cursor: pointer;
+}
+
+.menu__navigation button i {
+  display: none;
+}
+
+.menu__navigation button:nth-of-type(1) i {
+  display: block;
 }
 
 @media (min-width: 900px) {
@@ -229,7 +237,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 7%;
-    top: 25%;
+    top: 20%;
     right: 20px;
   }
   .menu__navigation button {
@@ -240,15 +248,20 @@ body {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    color: transparent;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     color: #fcfcfc;
-    -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
     font-size: 15px;
     background: rgba(5, 5, 5, 0.479);
+    font-family: "Sriracha", cursive;
+  }
+  .menu__navigation button p {
+    display: none;
+  }
+  .menu__navigation button i {
+    display: block;
+    font-size: 16px;
   }
   .menu button:nth-of-type(1) {
     background: #c90d0dcb;
@@ -263,8 +276,14 @@ body {
     color: white;
     background: rgba(5, 5, 5, 0.692);
   }
+  .menu button:hover p {
+    display: block;
+    text-transform: uppercase;
+  }
+  .menu button:hover i {
+    display: none;
+  }
   .menu button:focus {
-    background-color: rgba(100, 100, 100, 0.329);
     -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
             box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
     overflow: hidden;
@@ -275,23 +294,27 @@ button:first-of-type:hover {
   background: #20232a;
 }
 
+button:first-of-type:hover i {
+  display: block;
+}
+
 @media (min-width: 1370px) {
   .menu__navigation {
-    top: 10%;
+    top: 15%;
     right: -20px;
   }
   .menu__navigation button {
     font-size: 14px;
     margin-top: 50px;
-    min-width: 100px;
-    min-height: 100px;
+    width: 70px;
+    height: 70px;
     font-size: 15px;
-    font-family: "ndie Flower";
+    font-weight: bold;
   }
   .menu__navigation button:hover {
-    width: 125px;
-    height: 125px;
-    font-size: 23px;
+    width: 107px;
+    height: 107px;
+    font-size: 14px;
   }
 }
 
@@ -388,7 +411,6 @@ button:first-of-type:hover {
 }
 
 .head__but:focus {
-  background-color: rgba(100, 100, 100, 0.329);
   -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   overflow: hidden;
@@ -532,7 +554,6 @@ button:first-of-type:hover {
 }
 
 .aboutMe .btn-portfolio-3d a:focus {
-  background-color: rgba(100, 100, 100, 0.329);
   -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   overflow: hidden;
@@ -638,6 +659,9 @@ button:first-of-type:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -645,12 +669,13 @@ button:first-of-type:hover {
   }
   .aboutMe img {
     width: 20%;
-    margin: 15px;
+    margin: 25px;
   }
   .aboutMe .aboutMe__wrap {
     width: 60%;
     -webkit-box-shadow: 0px 5px 30px 3px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 5px 30px 3px rgba(0, 0, 0, 0.3);
+    margin: 20px;
   }
   .aboutMe .aboutMe__wrap h1 {
     max-width: 80%;
@@ -663,9 +688,19 @@ button:first-of-type:hover {
 }
 
 @media (min-width: 1200px) {
+  .aboutMe .aboutMe__wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .aboutMe img {
+    width: 15%;
+    margin: 0;
+  }
   .aboutMe .aboutMe__wrap {
     max-width: 55%;
     padding: 40px 0;
+    margin: 0;
   }
   .aboutMe .aboutMe__wrap h1 {
     font-size: 20px;
@@ -703,14 +738,14 @@ button:first-of-type:hover {
 .skills p.menu-item {
   display: block;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 50%;
   text-align: center;
   width: 50px;
   height: 50px;
   color: #777;
-  background-color: #d1d0d0;
-  -webkit-box-shadow: -4px 4px 7px 0px #2b2a2a;
-          box-shadow: -4px 4px 7px 0px #2b2a2a;
+  background-color: rgba(5, 5, 5, 0.479);
+  -webkit-box-shadow: 0px 0px 7px 2px #444444;
+          box-shadow: 0px 0px 7px 2px #444444;
   padding: 10px 0;
   line-height: 1;
   position: absolute;
@@ -721,11 +756,10 @@ button:first-of-type:hover {
 .skills p.menu-item:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  border-radius: 100%;
+  border-radius: 10%;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #fff;
-  background: #c90d0d;
+  background: rgba(26, 26, 26, 0.4);
 }
 
 @media (min-width: 600px) {
@@ -821,7 +855,6 @@ button:first-of-type:hover {
 }
 
 .projects button:focus {
-  background-color: rgba(100, 100, 100, 0.329);
   -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   overflow: hidden;
@@ -859,7 +892,6 @@ button:first-of-type:hover {
 }
 
 .projects__one .git a:focus {
-  background-color: rgba(100, 100, 100, 0.329);
   -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
   overflow: hidden;
@@ -875,10 +907,6 @@ button:first-of-type:hover {
   width: 80%;
   height: 80%;
   margin: 0 auto;
-  margin-top: 30px;
-  padding: 6px;
-  border-top: 4px solid white;
-  border-right: 4px solid white;
 }
 
 .projects__one div {
@@ -911,10 +939,11 @@ button:first-of-type:hover {
 
 @media (min-width: 600px) {
   .projects__one img {
-    width: 70%;
-    height: 30%;
+    width: 60%;
+    max-height: 30vh;
     margin: 50px auto;
-    padding-top: 20px;
+    -webkit-box-shadow: 15px 15px 6px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 15px 15px 6px 0px rgba(0, 0, 0, 0.75);
   }
   .projects__one div {
     display: -webkit-box;
@@ -938,7 +967,7 @@ button:first-of-type:hover {
     font-size: 35px;
   }
   .projects__one div .git p {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -971,9 +1000,8 @@ button:first-of-type:hover {
     margin: 0 auto;
     width: 90%;
     min-height: 300px;
+    max-height: 35vh;
     border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .projects__one div {
     margin-top: 5vh;
@@ -1027,8 +1055,6 @@ button:first-of-type:hover {
 }
 
 .contacts {
-  background-image: url("../img//landscape-404072_1920.jpg");
-  background-position: 50% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,14 +1064,14 @@ button:first-of-type:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 40px;
   min-height: 100vh;
+  border-top: 2px solid white;
 }
 
-.contacts img {
-  height: 50px;
+.contacts i {
+  font-size: 30px;
+  color: black;
 }
 
 .contacts p {
@@ -1069,6 +1095,7 @@ button:first-of-type:hover {
 
 .contacts__socials {
   width: 70%;
+  margin: 0 auto;
 }
 
 .contacts__socials .social {
@@ -1172,8 +1199,8 @@ button:first-of-type:hover {
 }
 
 @media (min-width: 600px) {
-  .contacts img {
-    height: 80px;
+  .contacts i {
+    font-size: 55px;
   }
   .contacts p {
     font-size: 25px;
@@ -1183,6 +1210,9 @@ button:first-of-type:hover {
   }
   .contacts__socials {
     width: 80%;
+  }
+  .contacts__socials .social i {
+    font-size: 40px;
   }
 }
 
@@ -1197,7 +1227,7 @@ button:first-of-type:hover {
     font-size: 30px;
   }
   .contacts__wrap {
-    width: 80%;
+    width: 90%;
   }
   .contacts__socials {
     display: -webkit-box;
@@ -1212,11 +1242,10 @@ button:first-of-type:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
+    width: 80%;
   }
-  .contacts__socials .social img {
-    width: 60px;
-    height: 60px;
+  .contacts__socials .social i {
+    font-size: 40px;
   }
   .contacts__socials .social p {
     font-size: 17px;
@@ -1224,15 +1253,26 @@ button:first-of-type:hover {
 }
 
 @media (min-width: 1370px) {
+  .contacts form {
+    width: 45%;
+  }
+  .contacts form input {
+    font-size: 15px;
+  }
   .contacts h1 {
+    font-size: 40px;
+  }
+  .contacts .contacts__wrap {
+    width: 76%;
+  }
+  .contacts .contacts__wrap .contacts__socials {
+    margin: 0 auto;
+  }
+  .contacts .contacts__wrap .contacts__socials .social i {
     font-size: 50px;
   }
-  .contacts .contacts__wrap .contacts__socials .social img {
-    width: 100px;
-    height: 100px;
-  }
   .contacts .contacts__wrap .contacts__socials .social p {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -1311,10 +1351,10 @@ button:first-of-type:hover {
 
 .footer {
   font-family: "Poppins";
-  background-color: #696636;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
+  border-top: 2px solid white;
 }
 /*# sourceMappingURL=style.css.map */

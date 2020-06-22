@@ -2,6 +2,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+
   min-height: 100vh;
   button {
     position: absolute;
@@ -32,7 +33,7 @@
   }
 
   button:focus {
-    background-color: rgba(100, 100, 100, 0.329);
+    // background-color: rgba(100, 100, 100, 0.329);
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
     overflow: hidden;
   }
@@ -56,7 +57,7 @@
         text-align: center;
       }
       a:focus {
-        background-color: rgba(100, 100, 100, 0.329);
+        // background-color: rgba(100, 100, 100, 0.329);
         box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
         overflow: hidden;
       }
@@ -71,10 +72,6 @@
       width: 80%;
       height: 80%;
       margin: 0 auto;
-      margin-top: 30px;
-      padding: 6px;
-      border-top: 4px solid white;
-      border-right: 4px solid white;
     }
 
     div {
@@ -108,10 +105,12 @@
   .projects {
     &__one {
       img {
-        width: 70%;
-        height: 30%;
+        width: 60%;
+
+        max-height: 30vh;
         margin: 50px auto;
-        padding-top: 20px;
+        // padding-top: 20px;
+        box-shadow: 15px 15px 6px 0px rgba(0, 0, 0, 0.75);
       }
       div {
         display: flex;
@@ -130,7 +129,7 @@
           margin: 0;
           font-size: 35px;
           p {
-            font-size: 30px;
+            font-size: 20px;
           }
         }
       }
@@ -158,8 +157,8 @@
         margin: 0 auto;
         width: 90%;
         min-height: 300px;
+        max-height: 35vh;
         border: none;
-        box-shadow: none;
       }
       div {
         margin-top: 5vh;
