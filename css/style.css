@@ -279,6 +279,8 @@ body {
   .menu button:hover p {
     display: block;
     text-transform: uppercase;
+    -webkit-animation: showP 2s;
+            animation: showP 2s;
   }
   .menu button:hover i {
     display: none;
@@ -333,6 +335,24 @@ button:first-of-type:hover i {
   }
   100% {
     right: 30px;
+  }
+}
+
+@-webkit-keyframes showP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -723,8 +743,8 @@ button:first-of-type:hover i {
   overflow: hidden;
 }
 
-.skills img {
-  width: 30px;
+.skills i {
+  font-size: 30px;
 }
 
 .skills .circle-menu-box {
@@ -736,7 +756,15 @@ button:first-of-type:hover i {
 }
 
 .skills p.menu-item {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   border-radius: 50%;
   text-align: center;
@@ -749,17 +777,37 @@ button:first-of-type:hover i {
   padding: 10px 0;
   line-height: 1;
   position: absolute;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: showSpan 1s;
+          animation: showSpan 1s;
+}
+
+.skills p.menu-item span {
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0;
+  font-size: 10px;
 }
 
 .skills p.menu-item:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
-  border-radius: 10%;
   -webkit-box-shadow: none;
           box-shadow: none;
   background: rgba(26, 26, 26, 0.4);
+}
+
+.skills p.menu-item:hover i {
+  opacity: 0;
+  -webkit-animation: hideI 0.5s;
+          animation: hideI 0.5s;
+}
+
+.skills p.menu-item:hover span {
+  -webkit-animation: showSpan 0.5s;
+          animation: showSpan 0.5s;
+  opacity: 1;
 }
 
 @media (min-width: 600px) {
@@ -771,11 +819,9 @@ button:first-of-type:hover i {
   .skills .circle-menu-box p.menu-item {
     height: 80px;
     width: 80px;
-    padding: 10px 0;
   }
-  .skills img {
-    width: 60px;
-    height: 60px;
+  .skills i {
+    font-size: 30px;
   }
   .skills .circle-menu-box p.menu-item:hover {
     -webkit-transform: scale(1.5);
@@ -792,11 +838,12 @@ button:first-of-type:hover i {
   .skills .circle-menu-box p.menu-item {
     height: 100px;
     width: 100px;
-    padding: 10px 0;
   }
-  .skills img {
-    width: 80px;
-    height: 80px;
+  .skills .circle-menu-box p.menu-item span {
+    font-size: 15px;
+  }
+  .skills i {
+    font-size: 40px;
   }
 }
 
@@ -807,13 +854,47 @@ button:first-of-type:hover i {
     margin-top: 5%;
   }
   .skills .circle-menu-box p.menu-item {
-    width: 120px;
-    height: 120px;
-    padding: 20px 0;
+    width: 100px;
+    height: 100px;
   }
-  .skills img {
-    width: 80px;
-    height: 80px;
+  .skills i {
+    font-size: 40px;
+  }
+}
+
+@-webkit-keyframes showSpan {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showSpan {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hideI {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideI {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
