@@ -14,10 +14,3 @@ setTimeout(() => {
 
   const indexTyping = setInterval(addLetter, time);
 }, 1200);
-
-const formBtn = document.querySelector(".btn");
-
-formBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log("no back-end");
-});
