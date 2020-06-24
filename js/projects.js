@@ -17,14 +17,7 @@ const ProjetsList = [
     p2: "HTML5, CSS3 oraz JavaScript",
     a: "https://ukaszzz.github.io/memory/",
   },
-  {
-    img: "img/toDo.png",
 
-    h1: "To do list",
-    p: " Aplikacja do zapisywania rzeczy do zrobienia",
-    p2: "HTML5, CSS3 oraz JavaScript",
-    a: "https://ukaszzz.github.io/toDoApp/",
-  },
   {
     img: "img/pz.png",
     h1: "metodyka p/z",
@@ -41,13 +34,21 @@ const ProjetsList = [
     a: "https://ukaszzz.github.io/app-for-calculating-AOF/",
   },
   {
-    img: "img/fatBear.jpg",
-    h1: "Fat Bear",
-    p:
-      " Strona wizytówka wykonana dla firmy Fat Bear. firmy oferującej usługi gastronomiczne",
-    p2: "HTML5, CSS3(SCSS) oraz JavaScript",
-    a: "ukaszzz.github.io/FatBear/",
+    img: "img/toDo.png",
+
+    h1: "To do list",
+    p: " Aplikacja do zapisywania rzeczy do zrobienia",
+    p2: "HTML5, CSS3 oraz JavaScript",
+    a: "https://ukaszzz.github.io/toDoApp/",
   },
+  // {
+  //   img: "img/fatBear.jpg",
+  //   h1: "Fat Bear",
+  //   p:
+  //     " Strona wizytówka wykonana dla firmy Fat Bear. firmy oferującej usługi gastronomiczne",
+  //   p2: "HTML5, CSS3(SCSS) oraz JavaScript",
+  //   a: "ukaszzz.github.io/FatBear/",
+  // },
 ];
 const btnLeft = document.querySelector(".btn-left");
 const btnRight = document.querySelector(".btn-right");

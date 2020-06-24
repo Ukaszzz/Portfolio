@@ -28,7 +28,7 @@ btnSmallMenu.addEventListener("click", () => {
     menu.style.display = "block";
     menuFirst.style.display = "none";
     menuSecond.style.display = "block";
-    headLine.style.marginTop = "80px";
+
     nav.style.height = "100%";
 
     clicked = !clicked;
@@ -36,7 +36,6 @@ btnSmallMenu.addEventListener("click", () => {
     menu.style.display = "none";
     menuFirst.style.display = "block";
     menuSecond.style.display = "none";
-    headLine.style.marginTop = "130px";
 
     clicked = !clicked;
   }

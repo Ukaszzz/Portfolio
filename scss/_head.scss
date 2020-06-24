@@ -51,11 +51,7 @@
     animation: opacityBtn 6s;
     cursor: pointer;
   }
-  .head__projects:hover,
-  .head__kontakt:hover {
-    font-size: 30px;
-    background-color: #c90d0dcb;
-  }
+
   &__but:focus {
     // background-color: rgba(100, 100, 100, 0.329);
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
@@ -89,6 +85,15 @@
     }
   }
 }
+@media (min-width: 1100px) {
+  .head {
+    .head__projects:hover,
+    .head__kontakt:hover {
+      font-size: 22x;
+      background-color: #c90d0dcb;
+    }
+  }
+}
 
 @keyframes opacityBtn {
   0% {
@@ -103,9 +108,11 @@
 }
 
 .head:after {
+  display: none;
+
   position: absolute;
   z-index: 1;
-  width: 150vh;
+  width: 90vw;
   height: 350vh;
   left: 10%;
   content: "";

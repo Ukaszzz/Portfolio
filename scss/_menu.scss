@@ -1,14 +1,16 @@
 .menu {
   font-size: 15px;
-  background-color: lightblue;
+
   display: none;
   z-index: 99;
+
   &__navigation {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: fixed;
     top: 0;
+    background-color: black;
 
     button {
       font-family: "popins";
@@ -38,12 +40,14 @@
     display: flex;
 
     &__navigation {
+      background-color: transparent;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       width: 7%;
       top: 20%;
       right: 20px;
+
       button {
         transition: all 0.5s;
         padding: 0;

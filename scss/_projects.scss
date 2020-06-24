@@ -27,10 +27,6 @@
   .btn-right {
     right: 0;
   }
-  button:hover {
-    background-color: $button-color;
-    color: #fff;
-  }
 
   button:focus {
     // background-color: rgba(100, 100, 100, 0.329);
@@ -50,7 +46,7 @@
       border: none;
       align-items: center;
       font-size: 24px;
-
+      overflow: hidden;
       a {
         color: black;
         text-decoration: none;
@@ -70,7 +66,7 @@
 
     img {
       width: 80%;
-      height: 80%;
+      max-height: 30vh;
       margin: 0 auto;
     }
 
@@ -145,6 +141,7 @@
     .btn-left {
       left: 10%;
     }
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -182,6 +179,12 @@
         }
       }
     }
+  }
+}
+@media (min-width: 1100px) {
+  button:hover {
+    background-color: $button-color;
+    color: #fff;
   }
 }
 
