@@ -20,12 +20,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&family=Sriracha&family=Kalam&family=Montserrat:ital,wght@1,300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
       rel="stylesheet"
     />
 
@@ -33,27 +30,27 @@
     <link rel="shortcut icon" href="img/favicon.ico" />
   </head>
   <body>
-    <menu class="menu">
+    <div class="menu">
       <nav class="menu__navigation">
-        <button class="menu__home"><i class="fas fa-home"></i></button>
-        <button class="menu__me">
+        <a data="1" class="menu__home"><span class="fas fa-home"></span></a>
+        <a data="2" class="menu__me">
           <p>o mnie</p>
-          <i class="fas fa-user-alt"></i>
-        </button>
-        <button class="menu__offer">
+          <span class="fas fa-user-alt"></span>
+        </a>
+        <a data="3" class="menu__skills">
           <p>umiejętności</p>
-          <i class="fas fa-tools"></i>
-        </button>
-        <button class="menu__portfoli">
+          <span class="fas fa-tools"></span>
+        </a>
+        <a data="4" class="menu__portfoli">
           <p>portfolio</p>
-          <i class="fas fa-briefcase"></i>
-        </button>
-        <button class="menu__contact">
+          <span class="fas fa-briefcase"></span>
+        </a>
+        <a data="5" class="menu__contact">
           <p>kontakt</p>
-          <i class="fas fa-address-card"></i>
-        </button>
+          <span class="fas fa-address-card"></span>
+        </a>
       </nav>
-    </menu>
+    </div>
 
     <section class="head">
       <h1 class="head__line">
@@ -61,10 +58,10 @@
         <p>WELCOME</p>
         <hr />
       </h1>
-      <h2 class="head__h2">on my website</h2>
+      <p class="head__p">on my website</p>
       <div>
-        <button class="head__but head__projects">portfolio</button>
-        <button class="head__but head__kontakt">kontakt</button>
+        <a class="head__but head__projects">portfolio</a>
+        <a class="head__but head__kontakt">kontakt</a>
       </div>
     </section>
 
@@ -75,7 +72,7 @@
           data-aos-duration="1000"
           class="aboutMe__img"
           src="img/ZołaŁukasz.jpg"
-          alt=""
+          alt="Lukasz_zola_photo"
           srcset=""
         />
         <div
@@ -83,19 +80,19 @@
           data-aos-duration="800"
           class="aboutMe__wrap"
         >
-          <h1>
+          <p>
             Cześć, nazywam się Łukasz, moją pasją są technologie front-end oraz
             druk 3d
-          </h1>
+          </p>
           <div class="social-icons">
             <div class="icon">
               <a href="https://github.com/Ukaszzz"
-                ><i class="fab fa-github"></i
+                ><span class="fab fa-github"></span
               ></a>
             </div>
             <div class="icon">
               <a href="https://www.linkedin.com/in/łukasz-zoła"
-                ><i class="fab fa-linkedin"></i
+                ><span class="fab fa-linkedin"></span
               ></a>
             </div>
           </div>
@@ -110,49 +107,65 @@
       <div data-aos="zoom-in" data-aos-duration="1500" class="container">
         <div class="menu-container">
           <div class="circle-menu-box">
-            <p class="menu-item">
+            <div class="menu-item">
               <br />
-              <i class="fab fa-html5"></i><span>html5</span>
-            </p>
-            <p class="menu-item">
-              <i class="fab fa-css3-alt"></i><span>css3</span>
-            </p>
-            <p class="menu-item">
-              <i class="fab fa-js"></i><span>JavaScript</span>
-            </p>
-            <p class="menu-item">
-              <i class="fab fa-sass"></i><span>scss</span>
-            </p>
-            <p class="menu-item">
-              <i class="fa fa-react"></i><span>react</span>
-            </p>
-            <p class="menu-item">
-              <i class="fab fa-git-square"></i><span>git</span>
-            </p>
-            <p class="menu-item"><i class="fab fa-npm"></i><span>npm</span></p>
-            <p class="menu-item"><i class="fa fa-gimp"></i><span>gimp</span></p>
+              <span class="fab fa-html5"></span>
+              <p>html5</p>
+            </div>
+            <div class="menu-item">
+              <span class="fab fa-css3-alt"></span>
+              <p>css3</p>
+            </div>
+            <div class="menu-item">
+              <span class="fab fa-js"></span>
+              <p>JavaScript</p>
+            </div>
+            <div class="menu-item">
+              <span class="fab fa-sass"></span>
+              <p>scss</p>
+            </div>
+            <div class="menu-item">
+              <span class="fa fa-react"></span>
+              <p>react</p>
+            </div>
+            <div class="menu-item">
+              <span class="fab fa-git-square"></span>
+              <p>git</p>
+            </div>
+            <div class="menu-item">
+              <span class="fab fa-npm"></span>
+              <p>npm</p>
+            </div>
+            <div class="menu-item">
+              <span class="fa fa-gimp"></span>
+              <p>gimp</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="portfolio" class="projects">
-      <button class="btn-left"><i class="fas fa-chevron-left"></i></button>
-      <button class="btn-right"><i class="fas fa-chevron-right"></i></button>
+      <button class="btn-left">
+        <span class="fas fa-chevron-left"></span>
+      </button>
+      <button class="btn-right">
+        <span class="fas fa-chevron-right"></span>
+      </button>
       <div class="projects__one">
         <img
           data-aos="zoom-out-up"
           data-aos-duration="2000"
           src="img/toDo.png"
-          alt=""
+          alt="toDoApp"
         />
         <div>
-          <h1
+          <h2
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
             data-aos-duration="1500"
           >
             To do list
-          </h1>
+          </h2>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -175,7 +188,7 @@
               data-aos-duration="1500"
               href="https://ukaszzz.github.io/toDoApp/"
             >
-              <i class="fab fa-github"></i>
+              <span class="fab fa-github"></span>
               <p>zobacz projekt</p></a
             >
           </div>
@@ -184,19 +197,19 @@
     </section>
 
     <section class="contacts">
-      <h1>kontakt :</h1>
+      <p class="contacts__title">kontakt :</p>
       <div class="contacts__wrap">
         <div class="contacts__socials">
           <div data-aos="fade-left" data-aos-duration="900" class="social">
-            <i class="far fa-envelope"></i>
+            <span class="far fa-envelope"></span>
             <p>zolalukas@gmail.com</p>
           </div>
           <div data-aos="fade-left" data-aos-duration="900" class="social">
-            <i class="fas fa-phone"></i>
+            <span class="fas fa-phone"></span>
             <p>886 079 125</p>
           </div>
           <div data-aos="fade-left" data-aos-duration="900" class="social">
-            <i class="fab fa-linkedin-in"></i>
+            <span class="fab fa-linkedin-in"></span>
             <p>/in/łukasz-zoła</p>
           </div>
         </div>
@@ -236,7 +249,7 @@
           class="message"
           required
         ></textarea>
-        <input name="submit" class="btn" type="submit" value="Send" />
+        <button name="submit" class="form-btn">wyślij</button>
       </form>
     </section>
     <footer class="footer">

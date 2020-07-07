@@ -2,7 +2,7 @@ const ProjetsList = [
   {
     img: "img/kamieńPapier.jpg",
 
-    h1: "Papier Kamień Nożyce",
+    h2: "Papier Kamień Nożyce",
     p:
       "prosta gra, która w zamyśle jest grą dla dwóch osób, tutaj rolę drugiej osoby spełnia komputer. A czy Ty jesteś wstanie wygrać z maszyną ?",
     p2: "HTML5, CSS3 oraz JavaScript",
@@ -11,7 +11,7 @@ const ProjetsList = [
   {
     img: "img/memory.png",
 
-    h1: "Memory Game",
+    h2: "Memory Game",
     p:
       "Prosta gra logiczna memory, która rozwija pamięć, spostrzegawczość oraz refleks",
     p2: "HTML5, CSS3 oraz JavaScript",
@@ -20,7 +20,7 @@ const ProjetsList = [
 
   {
     img: "img/pz.png",
-    h1: "metodyka p/z",
+    h2: "metodyka p/z",
     p:
       " Aplikacja do wyznaczenia zasobów początkowych gazu ziemnego w złożu metodą p/z",
     p2: "HTML5, CSS3(SCSS) oraz JavaScript",
@@ -28,7 +28,7 @@ const ProjetsList = [
   },
   {
     img: "img/AOF.png",
-    h1: "AOF",
+    h2: "AOF",
     p: " Aplikacjado wyznaczania wydatku potencjalnego odwiertu (ang. AOF)",
     p2: "HTML5, CSS3(SCSS) oraz JavaScript",
     a: "https://ukaszzz.github.io/app-for-calculating-AOF/",
@@ -36,7 +36,7 @@ const ProjetsList = [
   {
     img: "img/toDo.png",
 
-    h1: "To do list",
+    h2: "To do list",
     p: " Aplikacja do zapisywania rzeczy do zrobienia",
     p2: "HTML5, CSS3 oraz JavaScript",
     a: "https://ukaszzz.github.io/toDoApp/",
@@ -54,7 +54,7 @@ const btnLeft = document.querySelector(".btn-left");
 const btnRight = document.querySelector(".btn-right");
 const section = document.querySelector(".projects");
 const img = document.querySelector(".projects__one img");
-const h1 = document.querySelector(".projects__one h1");
+const h2 = document.querySelector(".projects__one h2");
 const p = document.querySelector(".projects__one .description");
 const p2 = document.querySelector(".projects__one .used-skills");
 const a = document.querySelector(".projects__one a");
@@ -65,7 +65,7 @@ const changeSlide = () => {
   if (active === ProjetsList.length) {
   }
   image.src = ProjetsList[active].img;
-  h1.textContent = ProjetsList[active].text;
+  h2.textContent = ProjetsList[active].text;
   popup = ProjetsList[active].popup;
   active++;
 };
@@ -76,7 +76,7 @@ const buttonLeft = () => {
   }
   active--;
   img.src = ProjetsList[active].img;
-  h1.textContent = ProjetsList[active].h1;
+  h2.textContent = ProjetsList[active].h2;
   p.textContent = ProjetsList[active].p;
   p2.textContent = ProjetsList[active].p2;
   a.href = ProjetsList[active].a;
@@ -89,7 +89,7 @@ const buttonRight = () => {
     active++;
   }
   img.src = ProjetsList[active].img;
-  h1.textContent = ProjetsList[active].h1;
+  h2.textContent = ProjetsList[active].h2;
   p.textContent = ProjetsList[active].p;
   p2.textContent = ProjetsList[active].p2;
   a.href = ProjetsList[active].a;

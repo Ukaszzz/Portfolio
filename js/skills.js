@@ -1,4 +1,4 @@
-var items = document.querySelectorAll(".circle-menu-box p.menu-item");
+var items = document.querySelectorAll(".circle-menu-box div.menu-item");
 
 for (var i = 0, l = items.length; i < l; i++) {
   items[i].style.left =

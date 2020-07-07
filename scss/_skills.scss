@@ -7,7 +7,7 @@
     overflow: hidden;
   }
 
-  i {
+  span {
     font-size: 30px;
   }
 
@@ -18,7 +18,7 @@
     margin: 30px auto;
     margin-top: 30%;
   }
-  p.menu-item {
+  div.menu-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@
     position: absolute;
     transition: all 0.5s ease-in-out;
     animation: showSpan 1s;
-    span {
+    p {
       position: absolute;
       text-transform: uppercase;
 
@@ -44,23 +44,22 @@
     }
   }
 
-  p.menu-item:hover {
+  div.menu-item:hover {
     transform: scale(1.4);
 
     box-shadow: none;
 
     background: rgba(26, 26, 26, 0.4);
-    i {
-      opacity: 0;
-      animation: hideI 0.5s;
-    }
     span {
-      animation: showSpan 0.5s;
+      opacity: 0;
+      animation: hideSpam 0.5s;
+    }
+    p {
+      animation: showP 0.5s;
       opacity: 1;
     }
   }
 }
-
 @media (min-width: 600px) {
   .skills {
     .circle-menu-box {
@@ -68,15 +67,15 @@
       height: 400px;
       margin-top: 20%;
 
-      p.menu-item {
+      div.menu-item {
         height: 80px;
         width: 80px;
-        span {
+        p {
           font-size: 12px;
         }
       }
     }
-    i {
+    span {
       font-size: 30px;
     }
 
@@ -92,16 +91,16 @@
       width: 900px;
       height: 700px;
       margin-top: 10%;
-      p.menu-item {
+      div.menu-item {
         height: 90px;
         width: 90px;
-        span {
+        p {
           font-size: 15px;
         }
       }
     }
 
-    i {
+    span {
       font-size: 40px;
     }
   }
@@ -112,22 +111,22 @@
       width: 1200px;
       height: 800px;
       margin-top: 5%;
-      p.menu-item {
+      div.menu-item {
         width: 90px;
         height: 90px;
-        span {
+        p {
           font-size: 14px;
         }
       }
     }
 
-    i {
+    span {
       font-size: 40px;
     }
   }
 }
 
-@keyframes showSpan {
+@keyframes showP {
   0% {
     opacity: 0;
   }
@@ -135,7 +134,7 @@
     opacity: 1;
   }
 }
-@keyframes hideI {
+@keyframes hideSpan {
   0% {
     opacity: 1;
   }

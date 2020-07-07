@@ -1,6 +1,6 @@
 const btnPortfolio = document.querySelector(".menu__portfoli");
 const btnAboutMe = document.querySelector(".menu__me");
-const btnOffer = document.querySelector(".menu__offer");
+const btnSkills = document.querySelector(".menu__skills");
 const btnContact = document.querySelector(".menu__contact ");
 const btnPortfolioHead = document.querySelector(".head__projects");
 const btnContactHead = document.querySelector(".head__kontakt");
@@ -35,7 +35,7 @@ btnPortfolioHead.addEventListener("click", () => {
   animation();
 });
 
-btnOffer.addEventListener("click", () => {
+btnSkills.addEventListener("click", () => {
   window.scrollTo({
     top: document.querySelector(".skills").offsetTop,
   });

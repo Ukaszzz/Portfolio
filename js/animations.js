@@ -1,4 +1,4 @@
-const spanText = document.querySelector(".head h2");
+const spanText = document.querySelector(".head__p");
 spanText.textContent = " ";
 const txt = "on my website".toUpperCase();
 

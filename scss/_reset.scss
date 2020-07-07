@@ -15,14 +15,8 @@ body {
     ),
     radial-gradient(50% 60% ellipse at bottom right, #0c535c 20%, #0f3443 100%);
   background-attachment: fixed;
+  font-family: "Lato";
 }
 
-// @media (min-width: 900px) {
-//   body {
-//     width: 100%;
-//     left: 0;
-//     margin: 0;
-//   }
-// }
 $button-color: #c90d0dcb;
 $bgc-dark: rgba(5, 5, 5, 0.479);
