@@ -32,6 +32,12 @@ btnSmallMenu.addEventListener("click", () => {
     nav.style.height = "100%";
 
     clicked = !clicked;
+    setTimeout(function () {
+      (menu.style.display = "none"),
+        (menuFirst.style.display = "block"),
+        (menuSecond.style.display = "none"),
+        (clicked = !clicked);
+    }, 3000);
   } else if (clicked == false) {
     menu.style.display = "none";
     menuFirst.style.display = "block";

@@ -31,21 +31,21 @@
   </head>
   <body>
     <div class="menu">
-      <nav class="menu__navigation">
-        <a data="1" class="menu__home"><span class="fas fa-home"></span></a>
-        <a data="2" class="menu__me">
+      <nav id="top-menu" class="menu__navigation">
+        <a class="menu__home link"><span class="fas fa-home"></span></a>
+        <a class="menu__me link">
           <p>o mnie</p>
           <span class="fas fa-user-alt"></span>
         </a>
-        <a data="3" class="menu__skills">
+        <a class="menu__skills link">
           <p>umiejętności</p>
           <span class="fas fa-tools"></span>
         </a>
-        <a data="4" class="menu__portfoli">
+        <a class="menu__portfoli link">
           <p>portfolio</p>
           <span class="fas fa-briefcase"></span>
         </a>
-        <a data="5" class="menu__contact">
+        <a class="menu__contact link">
           <p>kontakt</p>
           <span class="fas fa-address-card"></span>
         </a>
@@ -55,10 +55,10 @@
     <section class="head">
       <h1 class="head__line">
         <hr />
-        <p>WELCOME</p>
+        <p>WITAJ</p>
         <hr />
       </h1>
-      <p class="head__p">on my website</p>
+      <p class="head__p">na mojej stronie</p>
       <div>
         <a class="head__but head__projects">portfolio</a>
         <a class="head__but head__kontakt">kontakt</a>
@@ -82,7 +82,10 @@
         >
           <p>
             Cześć, nazywam się Łukasz, moją pasją są technologie front-end oraz
-            druk 3d
+            druk 3d. Programowaniem zajmuję się od około roku, obecnie szukam
+            miejsca gdzie mógłbym się rozwijać. Druk 3d to hobby, które pomogło
+            mi uzyskać tytuł inżyniera, drukuję głównie w technologii FDM w
+            domowym zaciszu.
           </p>
           <div class="social-icons">
             <div class="icon">
@@ -144,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" class="projects">
+    <section class="projects">
       <button class="btn-left">
         <span class="fas fa-chevron-left"></span>
       </button>
@@ -196,10 +199,10 @@
       </div>
     </section>
 
-    <section class="contacts">
-      <p class="contacts__title">kontakt :</p>
-      <div class="contacts__wrap">
-        <div class="contacts__socials">
+    <section class="contact">
+      <p class="contact__title">kontakt :</p>
+      <div class="contact__wrap">
+        <div class="contact__socials">
           <div data-aos="fade-left" data-aos-duration="900" class="social">
             <span class="far fa-envelope"></span>
             <p>zolalukas@gmail.com</p>
@@ -221,35 +224,23 @@
         data-aos="zoom-out"
         data-aos-duration="800"
       >
-        <input
-          name="name"
-          placeholder="Imię i Nazwisko"
-          class="name"
-          required
-        />
-        <input
-          name="email"
-          placeholder="Adres e-mail"
-          class="email"
-          type="email"
-          required
-        />
+        <div id="error_message"></div>
+        <input name="name" placeholder="Imię i Nazwisko" id="name" />
+        <input id="email" placeholder="Adres e-mail" id="email" type="email" />
         <input
           name="phone"
           placeholder="Numer telefonu"
-          class="tel"
+          id="phone"
           type="tel"
-          required
         />
         <textarea
           rows="4"
           cols="50"
-          name="subject"
+          name="message"
           placeholder="Zostaw wiadomość"
-          class="message"
-          required
+          id="message"
         ></textarea>
-        <button name="submit" class="form-btn">wyślij</button>
+        <button name="form-btn" class="form-btn">wyślij</button>
       </form>
     </section>
     <footer class="footer">
@@ -274,7 +265,11 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/menu.js"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/skills.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/projects.js"></script>
