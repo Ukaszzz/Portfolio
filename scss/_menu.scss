@@ -1,16 +1,12 @@
 .menu {
-  // padding: 10px 15px;
-  margin-bottom: 50px;
   font-size: 15px;
   background-color: lightblue;
   display: none;
-
+  z-index: 99;
   &__navigation {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0.842);
-    // height: 100%;
     position: fixed;
     top: 0;
 
@@ -24,6 +20,7 @@
       background-color: transparent;
       overflow: hidden;
       color: white;
+      cursor: pointer;
     }
 
     button::after {
@@ -46,17 +43,82 @@
 @media (min-width: 900px) {
   .menu {
     display: flex;
-
     &__navigation {
-      width: 100%;
-      max-width: 1370px;
-      padding-right: 30px;
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-
-      background-color: rgb(0, 0, 0);
-      // height: 9%;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 7%;
+      top: 25%;
+      right: 20px;
+      button {
+        transition: all 0.5s;
+        padding: 0;
+        margin: 7px 0;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        color: transparent;
+        flex-grow: 1;
+        color: white;
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+        font-size: 15px;
+      }
     }
+
+    button:nth-of-type(1) {
+      background: #20232a;
+    }
+    button:nth-of-type(2) {
+      background: #ff0000;
+    }
+    button:nth-of-type(3) {
+      background: #24a10b;
+    }
+    button:nth-of-type(4) {
+      background: #2758c9;
+    }
+    button:nth-of-type(5) {
+      background: #c1c416;
+    }
+    button:hover {
+      width: 100px;
+      height: 100px;
+      right: 30px;
+      animation: menu 0.5s;
+    }
+    button:hover::after {
+      left: -100%;
+    }
+  }
+}
+button:first-of-type:hover {
+  background: #20232a;
+}
+
+@media (min-width: 1370px) {
+  .menu {
+    &__navigation {
+      right: -20px;
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    &__navigation {
+      background-color: rgba(0, 0, 0, 0.842);
+    }
+  }
+}
+
+@keyframes menu {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 30px;
   }
 }

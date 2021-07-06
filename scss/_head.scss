@@ -1,21 +1,39 @@
 .head {
-  min-height: 80vh;
-  background-image: url("../img/tianjin-2185510_1920.jpg");
-  image-rendering: auto;
-
-  background-attachment: fixed;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
+  transform-style: preserve-3d;
 
+  transform: translate3d(0, 0, 0);
+
+  transition: background-color 3s ease-in-out 2s;
+
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  text-align: center;
+  padding: 0em;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0px;
+  border-bottom: none;
+  background-color: #00b5ad;
+
+  background-image: radial-gradient(
+    farthest-corner,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.95)
+  );
+  .grid {
+    margin: 0em;
+    padding: 15rem 0em;
+  }
   &__line {
-    // opacity: 0;
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
-
     padding-top: 20px;
-    margin-top: 130px;
-    // animation: opacity 2s;
     p {
       color: rgb(235, 220, 220);
       font-family: "Abril Fatface";
@@ -33,7 +51,7 @@
   }
   &__but {
     border: 2px solid lightblue;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px 15px;
     margin-bottom: 50px;
     margin-top: 100px;
@@ -45,6 +63,7 @@
     transition: linear 0.3s;
     font-family: "Poppins";
     animation: opacityBtn 6s;
+    cursor: pointer;
   }
   &__but:hover {
     border: 2px solid lightblue;
@@ -99,5 +118,45 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+.head:after {
+  position: absolute;
+  z-index: 1;
+  width: 135%;
+  height: 135%;
+  top: 18%;
+  left: 0px;
+  content: "";
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQB0vTs4VonFvh1bb-LT9sSR-kQNbw_KK7f5JNxBGw5UP6Tv71e&usqp=CAU);
+
+  transform-origin: 50% 50%;
+
+  transform-style: preserve-3d;
+
+  animation-name: splash;
+
+  transition: opacity 3s ease-in-out, transform 5s ease-in-out;
+  opacity: 0.06;
+
+  animation-duration: 15s;
+
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+
+  transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%)
+    translateX(-14%) translateZ(370px);
+  z-index: -1;
+}
+
+@keyframes splash {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -475px;
   }
 }
